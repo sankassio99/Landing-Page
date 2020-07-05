@@ -1,0 +1,171 @@
+/*PELTA DE CORES 
+    #2E294E AZUL
+    #F46036 LARANJA
+    #18998B AZUL CLARO
+    #C5D86D SALMÃO 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial  ;
+}
+.header {
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    min-height: 83vh;
+    max-width: 90%;
+    margin: 0 auto ;
+}
+
+.logo {
+    font-size: larger;
+    padding: 15px ;
+}
+
+.intro {
+    max-width:400px;
+    display: flex;
+    flex-direction: column;
+}
+.intro p {
+    color: #18998B;
+}
+.intro .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+}
+
+.intro .form input {
+    margin: 3px ;
+    padding: 14px ;
+    outline: none;
+    border: 0.3px  solid rgba(46, 41, 78, 0.3) ;
+}
+.intro .form input:focus {
+    border: 0.3px  solid rgba(46, 41, 78, 1) ;
+}
+.intro .form .group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.intro .form .group input {
+    width: 280px ;
+}
+.intro .form .group button {
+    font-size: large;
+    color: aliceblue ;
+    padding: 0px ;
+    border: none ;
+    background-color: #2E294E;
+    width: 144px ;
+    height: 45px ;
+}
+
+
+.image img{
+    max-width: 650px ;
+}
+@media (max-width:600px){
+    .image img{
+        width: 400px;
+    }
+}
+
+.btnArrow {
+    display: flex;
+    justify-content: center;
+}
+.btnArrow .arrow {
+    width: 50px ;
+}
+
+/*CARDS SECTION*/
+.section {
+    padding-top: 1.2em ;
+    background-color: white ;
+    min-height: 100vh ;
+}
+
+.text {
+    text-align: center;
+    max-width: 40%;
+    margin: 0 auto ;
+}
+.text p {
+    color: #18998B;
+    margin-bottom: 10px ;
+}
+.text h1 {
+    margin-bottom: 10px ;
+}
+/*CARDS*/
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cards span {
+    color: #18998B;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px ;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px ;
+    box-shadow: 1px 1px 50px rgba(93, 87, 129, 0.2);
+}
+.card img {
+    margin: 0 auto ;
+    max-width: 100px ;
+}
+.card .btnCard {
+    margin: 0 auto ;
+    font-size: large;
+    color: white ;
+    padding: 0px ;
+    border: none ;
+    background-color: #18998B;
+    width: 144px ;
+    height: 45px ;
+    transition: 0.2s ease-in-out ;
+}
+.card .btnCard:hover {
+    transition: 0.2s ease-in-out ;
+    background-color: #2E294E;
+}
+
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    background-color: #2E294E;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#btnFooter {
+    background-color: #18998B !important;
+    color: white ;
+}
+
+.footer .intro h3 {
+    text-align: center;
+    color: aliceblue;
+}
+.footer .info {
+    margin-top: 1.4em;
+    text-align: center;
+    color: aliceblue;
+}
